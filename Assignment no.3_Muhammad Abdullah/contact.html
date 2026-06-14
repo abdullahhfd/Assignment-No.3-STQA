@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Staging Testbed</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; margin: 40px; background-color: #fafafa; color: #222; }
+        nav { background-color: #112233; padding: 15px; }
+        nav a { color: #fff; text-decoration: none; margin-right: 15px; font-weight: bold; }
+        .main-card { margin-top: 30px; padding: 20px; border: 1px solid #ccc; background: #fff; }
+        .field { margin-bottom: 12px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 6px; box-sizing: border-box; }
+        button { background: #112233; color: white; padding: 8px 12px; border: none; cursor: pointer; }
+    </style> </head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="main-card">
+        <h1>Submit User Message</h1>
+        <form action="process_form.php" method="POST">
+            <div class="field">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
